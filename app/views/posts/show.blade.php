@@ -7,5 +7,5 @@
         <div>{{ $post->body }}</div>
     </div>
 
-    {{ link_to('posts', '&laquo; Go Back') }}
+    {{ link_to_route('posts.index', '&laquo; Go Back') }}
 @stop

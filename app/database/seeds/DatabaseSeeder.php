@@ -23,7 +23,7 @@ class PostsTableSeeder extends Seeder {
 		for ($i = 1; $i <= 10; $i++) {
 			Post::create([
 				'title'   => "Title $i",
-				'body'    => "Body of post $i",
+				'body'    => "Body of <strong>post $i</strong>",
 				'summary' => "Summary of post $i"
 			]);
 		}
