@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>thedebonair/words</title>
-    <link rel="stylesheet" href="css/words.css">
+    {{ HTML::style('css/words.css') }}
 </head>
 <body>
 
