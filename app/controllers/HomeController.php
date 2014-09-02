@@ -2,9 +2,16 @@
 
 class HomeController extends \BaseController {
 
+    protected $post;
+
+    public function __construct(Post $post)
+    {
+        $this->post = $post;
+    }
+
 	public function showWelcome()
 	{
-		$posts = Post::orderBy('id', 'desc')->get()->take(5);
+		$posts = $this->post->orderBy('id', 'desc')->get()->take(5);
 		return View::make('home')->with('posts', $posts);
 	}
 

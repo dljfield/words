@@ -2,15 +2,22 @@
 
 class PostsController extends \BaseController {
 
+    protected $post;
+
+    public function __construct(Post $post)
+    {
+        $this->post = $post;
+    }
+
     public function index()
     {
-        $posts = Post::orderBy('id', 'desc')->get();
+        $posts = $this->post->orderBy('id', 'desc')->get();
         return View::make('posts.index')->withPosts($posts);
     }
 
     public function show($id)
     {
-        $post = Post::find($id);
+        $post = $this->post->find($id);
 
         if ( ! $post) return View::make('404');
 
@@ -24,12 +31,13 @@ class PostsController extends \BaseController {
 
     public function store()
     {
-        $input = Input::all();
+        if ( ! $this->post->fill(Input::all())->isValid())
+        {
+            return Redirect::back()->withInput()->withErrors($this->post->errors);
+        }
 
-        $post = new Post;
-        $post->fill($input);
-        $post->save();
+        $this->post->save();
 
-        return Redirect::route('posts.show', [$post->id]);
+        return Redirect::route('posts.show', [$this->post->id]);
     }
 }
