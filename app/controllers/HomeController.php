@@ -4,7 +4,7 @@ class HomeController extends \BaseController {
 
 	public function showWelcome()
 	{
-		$posts = Post::all()->take(5);
+		$posts = Post::orderBy('id', 'desc')->get()->take(5);
 		return View::make('home')->with('posts', $posts);
 	}
 

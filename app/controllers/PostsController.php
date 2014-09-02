@@ -4,7 +4,7 @@ class PostsController extends \BaseController {
 
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::orderBy('id', 'desc')->get();
         return View::make('posts.index')->withPosts($posts);
     }
 
@@ -27,9 +27,9 @@ class PostsController extends \BaseController {
         $input = Input::all();
 
         $post = new Post;
-        $post->title = $input->title;
-        $post->summary = $input->summary;
-        $post->body = $input->body;
+        $post->fill($input);
         $post->save();
+
+        return Redirect::route('posts.show', [$post->id]);
     }
 }
