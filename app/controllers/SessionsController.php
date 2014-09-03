@@ -11,6 +11,7 @@ class SessionsController extends \BaseController {
 
     public function create()
     {
+        if (Auth::check()) return Redirect::route('admin');
         return View::make('sessions.create');
     }
 
