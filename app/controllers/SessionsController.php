@@ -22,7 +22,7 @@ class SessionsController extends \BaseController {
             return Redirect::back()->withInput()->withErrors($this->user->errors);
         }
 
-        return Redirect::route('admin');
+        return Redirect::intended();
     }
 
     public function destroy()
