@@ -2,10 +2,6 @@
 
 @section('content')
 
-    <div>
-        <p>Hello, {{ Auth::user()->username }}.</p>
-    </div>
-
     @if($posts->count())
         @foreach($posts as $post)
             <div class="post">
@@ -17,6 +13,5 @@
     @else
         <p>There aren't any posts, cap'n!</p>
     @endif
-
 
 @stop

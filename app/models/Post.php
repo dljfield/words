@@ -2,14 +2,15 @@
 
 class Post extends Eloquent {
 
-    protected $fillable = ['title', 'body', 'summary'];
+    protected $fillable = ['title', 'body', 'summary', 'published'];
 
     public $errors;
 
     protected static $rules = [
         'title'   => 'required',
         'body'    => 'required',
-        'summary' => 'required'
+        'summary' => 'required',
+        'published' => 'required'
     ];
 
     public function isValid()

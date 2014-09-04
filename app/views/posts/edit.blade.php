@@ -20,6 +20,8 @@
             {{ $errors->first('summary', '<span class=error>:message') }}
         </div>
         <div>
+            {{ Form::checkbox('published', true, $post->published) }}
+            {{ Form::label('publish', 'Publish?') }}
             {{ Form::submit('Update This Post') }}
         </div>
         {{ Form::close() }}

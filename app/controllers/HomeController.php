@@ -11,7 +11,7 @@ class HomeController extends \BaseController {
 
 	public function showWelcome()
 	{
-		$posts = $this->post->orderBy('id', 'desc')->get()->take(5);
+		$posts = $this->post->where('published', '=', true)->orderBy('id', 'desc')->get()->take(5);
 		return View::make('home')->with('posts', $posts);
 	}
 

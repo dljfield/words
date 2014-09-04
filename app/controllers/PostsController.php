@@ -12,7 +12,7 @@ class PostsController extends \BaseController {
 
     public function index()
     {
-        $posts = $this->post->orderBy('id', 'desc')->get();
+        $posts = $this->post->where('published', '=', true)->orderBy('id', 'desc')->get();
         return View::make('posts.index')->withPosts($posts);
     }
 
@@ -32,7 +32,7 @@ class PostsController extends \BaseController {
 
     public function store()
     {
-        $input = Input::only('title', 'body', 'summary');
+        $input = Input::only('title', 'body', 'summary', 'published');
 
         if ( ! $this->post->fill($input)->isValid())
         {
@@ -55,7 +55,8 @@ class PostsController extends \BaseController {
 
     public function update($id)
     {
-        $input = Input::only('title', 'body', 'summary');
+        $input = Input::only('title', 'body', 'summary', 'published');
+
         $post = $this->post->find($id);
 
         // TODO: 404 isn't really appropriate. Will have to make some other
