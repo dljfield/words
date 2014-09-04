@@ -7,10 +7,16 @@ Route::get('/about', ['as' => 'about', 'uses' => 'HomeController@showAbout']);
 // SESSIONS
 Route::get('login', ['as' => 'login', 'uses' => 'SessionsController@create']);
 Route::get('logout', ['as' => 'logout', 'uses' => 'SessionsController@destroy']);
-Route::resource('sessions', 'SessionsController');
+Route::resource('sessions', 'SessionsController',
+    ['only' => ['create', 'store', 'destroy']]
+);
 
 // POSTS
-Route::resource('posts', 'PostsController');
+Route::resource('posts', 'PostsController',
+    ['except' => 'destroy']
+);
 
 // ADMIN
-Route::resource('admin', 'AdminController');
+Route::resource('admin', 'AdminController',
+    ['only' => 'index']
+);
