@@ -15,7 +15,7 @@
             {{ $errors->first('password', '<span class=error>:message') }}
         </div>
         <div>
-            {{ Form::submit('Log In Mah Nigga') }}
+            {{ Form::submit('Log In') }}
         </div>
         {{ Form::close() }}
     </div>

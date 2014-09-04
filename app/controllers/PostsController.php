@@ -32,7 +32,9 @@ class PostsController extends \BaseController {
 
     public function store()
     {
-        if ( ! $this->post->fill(Input::all())->isValid())
+        $input = Input::only('title', 'body', 'summary');
+
+        if ( ! $this->post->fill($input)->isValid())
         {
             return Redirect::back()->withInput()->withErrors($this->post->errors);
         }
