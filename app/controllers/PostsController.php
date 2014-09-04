@@ -41,6 +41,35 @@ class PostsController extends \BaseController {
 
         $this->post->save();
 
-        return Redirect::route('posts.show', [$this->post->id]);
+        return Redirect::route('posts.show', $this->post->id);
+    }
+
+    public function edit($id)
+    {
+        $post = $this->post->find($id);
+
+        if ( ! $post) return View::make('404');
+
+        return View::make('posts.edit')->withPost($post);
+    }
+
+    public function update($id)
+    {
+        $input = Input::only('title', 'body', 'summary');
+        $post = $this->post->find($id);
+
+        // TODO: 404 isn't really appropriate. Will have to make some other
+        // error pages and use those.
+        if ( ! $post) return View::make('404');
+
+        if ( ! $post->fill($input)->isValid())
+        {
+            return Redirect::back()->withInput()->withErrors($post->errors);
+        }
+
+        $post->save();
+
+        return Redirect::route('posts.show', $post->id);
+
     }
 }
