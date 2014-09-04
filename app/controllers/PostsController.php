@@ -12,7 +12,7 @@ class PostsController extends \BaseController {
 
     public function index()
     {
-        $posts = $this->post->where('published', '=', true)->orderBy('id', 'desc')->get();
+        $posts = $this->post->where('published', '=', true)->orderBy('published_at', 'desc')->get();
         return View::make('posts.index')->withPosts($posts);
     }
 
@@ -37,6 +37,12 @@ class PostsController extends \BaseController {
         if ( ! $this->post->fill($input)->isValid())
         {
             return Redirect::back()->withInput()->withErrors($this->post->errors);
+        }
+
+        if ($this->post->published == true)
+        {
+            $dt = new DateTime;
+            $this->post->published_at = $dt->format('Y-m-d H:i:s');
         }
 
         $this->post->save();
@@ -66,6 +72,12 @@ class PostsController extends \BaseController {
         if ( ! $post->fill($input)->isValid())
         {
             return Redirect::back()->withInput()->withErrors($post->errors);
+        }
+
+        if ($post->published == true && $post->published_at === null)
+        {
+            $dt = new DateTime;
+            $post->published_at = $dt->format('Y-m-d H:i:s');
         }
 
         $post->save();

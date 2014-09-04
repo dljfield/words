@@ -10,7 +10,6 @@ class Post extends Eloquent {
         'title'   => 'required',
         'body'    => 'required',
         'summary' => 'required',
-        'published' => 'required'
     ];
 
     public function isValid()
