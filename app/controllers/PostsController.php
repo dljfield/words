@@ -20,7 +20,7 @@ class PostsController extends \BaseController {
     {
         $post = $this->post->find($id);
 
-        if ( ! $post) return View::make('404');
+        if ( ! $post || $post->published == false && Auth::guest()) return View::make('404');
 
         return View::make('posts.show')->withPost($post);
     }
