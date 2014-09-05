@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>thedebonair/words</title>
+    {{ HTML::style('css/normalize.css') }}
+    {{ HTML::style('css/foundation.css') }}
     {{ HTML::style('css/words.css') }}
 </head>
 <body>
