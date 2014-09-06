@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>thedebonair/words</title>
+
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Crimson:400,400i,600,600i/Muli:200,200i">
+
     {{ HTML::style('css/normalize.css') }}
     {{ HTML::style('css/foundation.css') }}
     {{ HTML::style('css/words.css') }}
@@ -10,11 +13,11 @@
 <body>
 
     <div class="container">
-        <h1>thedebonair/words</h1>
-
         @if(Auth::check())
             @include('layouts.partials._adminbar')
         @endif
+
+        <h1>thedebonair/words</h1>
 
         @include('layouts.partials._navigation')
 
