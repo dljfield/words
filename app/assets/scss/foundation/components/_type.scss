@@ -18,7 +18,7 @@ $header-text-rendering: optimizeLegibility !default;
 
 // We use these to control header font sizes
 $h1-font-size: rem-calc(44) !default;
-$h2-font-size: rem-calc(37) !default;
+$h2-font-size: rem-calc(35) !default;
 $h3-font-size: rem-calc(27) !default;
 $h4-font-size: rem-calc(23) !default;
 $h5-font-size: rem-calc(18) !default;
@@ -41,6 +41,7 @@ $subheader-bottom-margin: .5rem !default;
 
 // A general <small> styling
 $small-font-family: $header-font-family;
+$small-font-weight: bold;
 $small-font-size: 60% !default;
 $small-font-color: scale-color($header-font-color, $lightness: 35%) !default;
 
@@ -48,7 +49,7 @@ $small-font-color: scale-color($header-font-color, $lightness: 35%) !default;
 $paragraph-font-family: inherit !default;
 $paragraph-font-weight: $font-weight-normal !default;
 $paragraph-font-size: 1rem !default;
-$paragraph-line-height: 1.6 !default;
+$paragraph-line-height: 1.7 !default;
 $paragraph-margin-bottom: rem-calc(20) !default;
 $paragraph-aside-font-size: rem-calc(14) !default;
 $paragraph-aside-line-height: 1.35 !default;
@@ -57,13 +58,15 @@ $paragraph-text-rendering: optimizeLegibility !default;
 
 // We use these to style <code> tags
 $code-color: $oil !default;
-$code-font-family: Consolas, 'Liberation Mono', Courier, monospace !default;
+$code-font-family: "Source Code Pro", Consolas, 'Liberation Mono', Courier, monospace !default;
 $code-font-weight: $font-weight-normal !default;
+$code-font-size: 70%;
 $code-background-color: scale-color($secondary-color, $lightness: 70%) !default;
 $code-border-size: 1px !default;
 $code-border-style: solid !default;
 $code-border-color: scale-color($code-background-color, $lightness: -10%) !default;
-$code-padding: rem-calc(2) rem-calc(5) rem-calc(1) !default;
+$code-padding: rem-calc(2) rem-calc(7) rem-calc(2) !default;
+$code-margin-bottom: $paragraph-margin-bottom;
 
 // We use these to style anchors
 $anchor-text-decoration: none !default;
@@ -179,6 +182,7 @@ $align-class-breakpoints:
 }
 
 @mixin subheader {
+  font-family: $header-font-family;
   line-height: $subheader-line-height;
   color: $subheader-font-color;
   font-weight: $subheader-font-weight;
@@ -262,6 +266,7 @@ $align-class-breakpoints:
 
       small {
         font-size: $small-font-size;
+        font-weight: $small-font-weight;
         color: $small-font-color;
         line-height: 0;
       }
@@ -305,6 +310,7 @@ $align-class-breakpoints:
 
     code {
       font-family: $code-font-family;
+      font-size: $code-font-size;
       font-weight: $code-font-weight;
       color: $code-color;
       background-color: $code-background-color;
@@ -312,6 +318,20 @@ $align-class-breakpoints:
       border-style: $code-border-style;
       border-color: $code-border-color;
       padding: $code-padding;
+    }
+
+    .code-block {
+      font-family: $code-font-family;
+      font-size: $code-font-size;
+      font-weight: $code-font-weight;
+      line-height: 1.7;
+      color: $code-color;
+      background-color: $code-background-color;
+      border-width: $code-border-size;
+      border-style: $code-border-style;
+      border-color: $code-border-color;
+      padding: $code-padding;
+      margin-bottom: $code-margin-bottom;
     }
 
     /* Lists */

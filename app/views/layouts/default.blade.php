@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>thedebonair/words</title>
 
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Crimson:400,400i,600,600i/Muli:200,200i">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Crimson:400,400i,600,600i/Muli:200,200i/Source+Code+Pro:400,600">
 
     {{ HTML::style('css/normalize.css') }}
     {{ HTML::style('css/foundation.css') }}
@@ -13,15 +13,17 @@
 <body>
 
     <div class="container">
-        @if(Auth::check())
-            @include('layouts.partials._adminbar')
-        @endif
+        <div class="row">
+            @if(Auth::check())
+                @include('layouts.partials._adminbar')
+            @endif
 
-        <h1>thedebonair/words</h1>
+            <h1>thedebonair/words</h1>
 
-        @include('layouts.partials._navigation')
+            @include('layouts.partials._navigation')
 
-        @yield('content')
+            @yield('content')
+        </div>
     </div>
 
 </body>

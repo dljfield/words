@@ -2579,7 +2579,7 @@ fieldset {
   padding: 1.25rem;
   margin: 1.125rem 0; }
   fieldset legend {
-    font-weight: bold;
+    font-weight: 600;
     background: #FFFFFF;
     padding: 0 0.1875rem;
     margin: 0;
@@ -2844,7 +2844,7 @@ label.error {
 .joyride-tip-guide h1, .joyride-tip-guide h2, .joyride-tip-guide h3, .joyride-tip-guide h4, .joyride-tip-guide h5, .joyride-tip-guide h6 {
   line-height: 1.25;
   margin: 0;
-  font-weight: bold;
+  font-weight: 600;
   color: #FFFFFF; }
 
 .joyride-tip-guide p {
@@ -3252,7 +3252,7 @@ ul.pagination {
     ul.pagination li.current a, ul.pagination li.current button {
       background: #008CBA;
       color: #FFFFFF;
-      font-weight: bold;
+      font-weight: 600;
       cursor: default; }
       ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
         background: #008CBA; }
@@ -3586,7 +3586,7 @@ ul.pagination {
     top: 0.5rem;
     right: 0.6875rem;
     color: #AAAAAA;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer; }
 
 dialog {
@@ -3879,14 +3879,14 @@ table {
     table thead tr th, table thead tr td {
       padding: 0.5rem 0.625rem 0.625rem;
       font-size: 0.875rem;
-      font-weight: bold;
+      font-weight: 600;
       color: #222222; }
   table tfoot {
     background: #F5F5F5; }
     table tfoot tr th, table tfoot tr td {
       padding: 0.5rem 0.625rem 0.625rem;
       font-size: 0.875rem;
-      font-weight: bold;
+      font-weight: 600;
       color: #222222; }
   table tr th, table tr td {
     padding: 0.5625rem 0.625rem;
@@ -4031,7 +4031,7 @@ p {
   font-family: inherit;
   font-weight: normal;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {
@@ -4054,6 +4054,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
+    font-weight: bold;
     color: #6f6f6f;
     line-height: 0; }
 
@@ -4061,7 +4062,7 @@ h1 {
   font-size: 2.125rem; }
 
 h2 {
-  font-size: 1.6875rem; }
+  font-size: 1.5625rem; }
 
 h3 {
   font-size: 1.375rem; }
@@ -4076,6 +4077,7 @@ h6 {
   font-size: 1rem; }
 
 .subheader {
+  font-family: "Muli", sans-serif;
   line-height: 1.4;
   color: #6f6f6f;
   font-weight: normal;
@@ -4095,7 +4097,7 @@ em, i {
   line-height: inherit; }
 
 strong, b {
-  font-weight: bold;
+  font-weight: 600;
   line-height: inherit; }
 
 small {
@@ -4104,19 +4106,33 @@ small {
   line-height: inherit; }
 
 code {
-  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+  font-family: "Source Code Pro", Consolas, 'Liberation Mono', Courier, monospace;
+  font-size: 70%;
   font-weight: normal;
   color: #333333;
   background-color: #f8f8f8;
   border-width: 1px;
   border-style: solid;
   border-color: #dfdfdf;
-  padding: 0.125rem 0.3125rem 0.0625rem; }
+  padding: 0.125rem 0.4375rem 0.125rem; }
+
+.code-block {
+  font-family: "Source Code Pro", Consolas, 'Liberation Mono', Courier, monospace;
+  font-size: 70%;
+  font-weight: normal;
+  line-height: 1.7;
+  color: #333333;
+  background-color: #f8f8f8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dfdfdf;
+  padding: 0.125rem 0.4375rem 0.125rem;
+  margin-bottom: 1.25rem; }
 
 /* Lists */
 ul, ol, dl {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 1.25rem;
   list-style-position: outside;
   font-family: inherit; }
@@ -4158,7 +4174,7 @@ ol {
 /* Definition Lists */
 dl dt {
   margin-bottom: 0.3rem;
-  font-weight: bold; }
+  font-weight: 600; }
 dl dd {
   margin-bottom: 0.75rem; }
 
@@ -4188,7 +4204,7 @@ blockquote {
       color: #555555; }
 
 blockquote, blockquote p {
-  line-height: 1.6;
+  line-height: 1.7;
   color: #6f6f6f; }
 
 /* Microformats */
@@ -4201,15 +4217,15 @@ blockquote, blockquote p {
     margin: 0;
     display: block; }
   .vcard .fn {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.9375rem; }
 
 .vevent .summary {
-  font-weight: bold; }
+  font-weight: 600; }
 .vevent abbr {
   cursor: default;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   border: none;
   padding: 0 0.0625rem; }
 
@@ -4219,7 +4235,7 @@ blockquote, blockquote p {
   h1 {
     font-size: 2.75rem; }
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 2.1875rem; }
   h3 {
     font-size: 1.6875rem; }
   h4 {
@@ -4387,7 +4403,7 @@ blockquote, blockquote p {
 .has-tip {
   border-bottom: dotted 1px #CCCCCC;
   cursor: help;
-  font-weight: bold;
+  font-weight: 600;
   color: #333333; }
   .has-tip:hover, .has-tip:focus {
     border-bottom: dotted 1px #004054;
@@ -4545,7 +4561,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       text-transform: uppercase;
       font-size: 0.8125rem;
-      font-weight: bold;
+      font-weight: 600;
       position: relative;
       display: block;
       padding: 0 15px;
@@ -4762,7 +4778,7 @@ meta.foundation-mq-topbar {
       margin-bottom: 0;
       text-transform: uppercase;
       color: #777777;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 0.625rem; }
 
 .js-generated {
