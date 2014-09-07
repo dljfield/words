@@ -1,8 +1,6 @@
 @import "foundation/components/global";
 @import "foundation/components/type";
 
-$box-shadow-color: $smoke;
-
 .row {
     // box-shadow: 0 0 30px 1px #f0f0f0;
 }
@@ -87,4 +85,9 @@ footer {
     text-align: center;
     font-family: $header-font-family;
     font-size: rem-calc(13);
+}
+
+.panel p {
+    margin: 0;
+    padding: 0;
 }

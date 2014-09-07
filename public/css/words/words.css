@@ -556,3 +556,7 @@ footer {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8125rem; }
+
+.panel p {
+  margin: 0;
+  padding: 0; }

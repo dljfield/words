@@ -3269,12 +3269,14 @@ ul.pagination {
 
 /* Panels */
 .panel {
-  border-style: solid;
+  border-style: none;
   border-width: 1px;
-  border-color: #d8d8d8;
+  border-color: #e3e3e3;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: #f2f2f2; }
+  -webkit-box-shadow: 0 0 30px 1px #EEEEEE;
+          box-shadow: 0 0 30px 1px #EEEEEE;
+  background: white; }
   .panel > :first-child {
     margin-top: 0; }
   .panel > :last-child {
@@ -3287,11 +3289,13 @@ ul.pagination {
     .panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
       line-height: 1.4; }
   .panel.callout {
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     border-color: #b6efff;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
+    -webkit-box-shadow: 0 0 30px 1px #EEEEEE;
+            box-shadow: 0 0 30px 1px #EEEEEE;
     background: #ecfaff; }
     .panel.callout > :first-child {
       margin-top: 0; }
@@ -5292,3 +5296,7 @@ footer {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8125rem; }
+
+.panel p {
+  margin: 0;
+  padding: 0; }

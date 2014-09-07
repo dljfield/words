@@ -18,13 +18,13 @@
             @if (Auth::check())
                 <div>{{ link_to_route('posts.edit', 'Edit This Post', $post->id) }}</div>
             @endif
-            <div>{{ link_to_route('posts.index', '&laquo; Go Back') }}</div>
+            <div>{{ link_to_route('posts.index', '&laquo; All Posts') }}</div>
         </section>
 
     </div>
 
     <div class="row">
-        <div class="large-12 columns">{{ link_to_route('posts.index', '&laquo; Go Back') }}</div>
+        <div class="large-12 columns">{{ link_to_route('posts.index', '&laquo; All Posts') }}</div>
     </div>
 
 @stop
