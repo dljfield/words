@@ -26,5 +26,7 @@
         <!-- </div> -->
     </div>
 
+    @include('layouts.partials._footer')
+
 </body>
 </html>

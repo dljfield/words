@@ -5241,7 +5241,18 @@ th.hide-for-touch {
   margin-top: 4em; }
 
 .side {
-  padding-top: 10px; }
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem; }
+
+.side p {
+  font-size: inherit; }
 
 .error {
   color: red; }
+
+footer {
+  padding: 50px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem; }
