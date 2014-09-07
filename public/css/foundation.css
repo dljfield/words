@@ -5303,3 +5303,13 @@ footer {
 
 .form {
   font-family: "Open Sans", sans-serif; }
+
+.fourohfour {
+  text-align: center;
+  font-family: "Open Sans", sans-serif; }
+
+.fourohfour h2 {
+  text-align: inherit; }
+
+.fourohfour p {
+  text-align: inherit; }

@@ -20,7 +20,7 @@ class PostsController extends \BaseController {
     {
         $post = $this->post->find($id);
 
-        if ( ! $post || $post->published == false && Auth::guest()) return View::make('404');
+        if ( ! $post || $post->published == false && Auth::guest()) App::abort(404);
 
         return View::make('posts.show')->withPost($post);
     }
@@ -54,7 +54,7 @@ class PostsController extends \BaseController {
     {
         $post = $this->post->find($id);
 
-        if ( ! $post) return View::make('404');
+        if ( ! $post) App::abort(404);
 
         return View::make('posts.edit')->withPost($post);
     }
@@ -67,7 +67,7 @@ class PostsController extends \BaseController {
 
         // TODO: 404 isn't really appropriate. Will have to make some other
         // error pages and use those.
-        if ( ! $post) return View::make('404');
+        if ( ! $post) App::abort(404);
 
         if ( ! $post->fill($input)->isValid())
         {

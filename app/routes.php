@@ -20,3 +20,9 @@ Route::resource('posts', 'PostsController',
 Route::resource('admin', 'AdminController',
     ['only' => 'index']
 );
+
+// 404
+App::missing(function($exception)
+{
+    return Response::view('404', array(), 404);
+});
