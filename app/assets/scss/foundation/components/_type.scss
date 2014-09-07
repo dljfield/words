@@ -7,8 +7,8 @@
 $include-html-type-classes: $include-html-classes !default;
 
 // We use these to control header font styles
-$header-font-family: "Muli", sans-serif !default;
-$header-font-weight: 200 !default;
+$header-font-family: "Open Sans", sans-serif !default;
+$header-font-weight: 300 !default;
 $header-font-style: $font-weight-normal !default;
 $header-font-color: $jet !default;
 $header-line-height: 1.4 !default;
@@ -58,7 +58,7 @@ $paragraph-text-rendering: optimizeLegibility !default;
 
 // We use these to style <code> tags
 $code-color: $oil !default;
-$code-font-family: "Source Code Pro", Consolas, 'Liberation Mono', Courier, monospace !default;
+$code-font-family: "Inconsolata", Consolas, 'Liberation Mono', Courier, monospace !default;
 $code-font-weight: $font-weight-normal !default;
 $code-font-size: 70%;
 $code-background-color: scale-color($secondary-color, $lightness: 70%) !default;

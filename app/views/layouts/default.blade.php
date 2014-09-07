@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>thedebonair/words</title>
+    <title>/words</title>
 
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Crimson:400,400i,600,600i/Muli:200,200i/Source+Code+Pro:400,600">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Crimson:400,400i,600,600i/Open+Sans:300,300i/Inconsolata:500">
 
     {{ HTML::style('css/normalize.css') }}
     {{ HTML::style('css/foundation.css') }}
@@ -18,7 +18,7 @@
                 @include('layouts.partials._adminbar')
             @endif
 
-            <h1>thedebonair/words</h1>
+            <h1>/words</h1>
 
             @include('layouts.partials._navigation')
 

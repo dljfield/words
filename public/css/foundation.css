@@ -33,7 +33,7 @@ html, body {
   box-sizing: border-box; }
 
 html, body {
-  font-size: 18px; }
+  font-size: 21px; }
 
 body {
   background: #fff;
@@ -4044,8 +4044,8 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Muli", sans-serif;
-  font-weight: 200;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -4077,7 +4077,7 @@ h6 {
   font-size: 1rem; }
 
 .subheader {
-  font-family: "Muli", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.4;
   color: #6f6f6f;
   font-weight: normal;
@@ -4101,12 +4101,12 @@ strong, b {
   line-height: inherit; }
 
 small {
-  font-family: "Muli", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 60%;
   line-height: inherit; }
 
 code {
-  font-family: "Source Code Pro", Consolas, 'Liberation Mono', Courier, monospace;
+  font-family: "Inconsolata", Consolas, 'Liberation Mono', Courier, monospace;
   font-size: 70%;
   font-weight: normal;
   color: #333333;
@@ -4117,7 +4117,7 @@ code {
   padding: 0.125rem 0.4375rem 0.125rem; }
 
 .code-block {
-  font-family: "Source Code Pro", Consolas, 'Liberation Mono', Courier, monospace;
+  font-family: "Inconsolata", Consolas, 'Liberation Mono', Courier, monospace;
   font-size: 70%;
   font-weight: normal;
   line-height: 1.7;
