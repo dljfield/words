@@ -5253,7 +5253,25 @@ th.hide-for-touch {
 
 .title-main {
   text-align: center;
-  margin-bottom: -15px; }
+  margin-bottom: -15px;
+  margin-top: 50px; }
+
+.admin-bar {
+  text-align: center;
+  max-width: 100%;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset 0 -10px 30px -10px #EEEEEE;
+          box-shadow: inset 0 -10px 30px -10px #EEEEEE;
+  padding: 5px; }
+
+.admin-bar ul {
+  margin: 0; }
+
+.admin-bar li {
+  display: inline-block;
+  font-size: 0.8125rem;
+  padding: 0px 10px 0px 10px; }
 
 .nav-main {
   text-align: center;
