@@ -515,6 +515,24 @@ blockquote, blockquote p {
 .error {
   color: red; }
 
+.title-main {
+  text-align: center;
+  margin-bottom: -15px; }
+
+.nav-main {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 50px; }
+
+.nav-main ul {
+  margin: 0; }
+
+.nav-main li {
+  display: inline-block;
+  font-size: 0.8125rem;
+  padding: 0px 10px 20px 10px; }
+
 footer {
   padding: 50px;
   text-align: center;

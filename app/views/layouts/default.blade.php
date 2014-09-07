@@ -18,7 +18,12 @@
                 @include('layouts.partials._adminbar')
             @endif
 
-            <h1>/words</h1>
+            <div class="row">
+                <div class="small-12 columns title-main">
+                    <h1>/words</h1>
+                </div>
+            </div>
+
 
             @include('layouts.partials._navigation')
 
