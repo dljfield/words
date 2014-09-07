@@ -4107,7 +4107,7 @@ small {
 
 code {
   font-family: "Inconsolata", Consolas, 'Liberation Mono', Courier, monospace;
-  font-size: 70%;
+  font-size: 80%;
   font-weight: normal;
   color: #333333;
   background-color: #f8f8f8;
@@ -4118,7 +4118,7 @@ code {
 
 .code-block {
   font-family: "Inconsolata", Consolas, 'Liberation Mono', Courier, monospace;
-  font-size: 70%;
+  font-size: 80%;
   font-weight: normal;
   line-height: 1.7;
   color: #333333;
@@ -4193,11 +4193,13 @@ abbr {
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
-  border-left: 1px solid #DDDDDD; }
+  border-left: 1px solid #DDDDDD;
+  font-family: "Open Sans", sans-serif; }
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
-    color: #555555; }
+    color: #555555;
+    padding-top: 20px; }
     blockquote cite:before {
       content: "\2014 \0020"; }
     blockquote cite a, blockquote cite a:visited {
