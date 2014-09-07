@@ -33,7 +33,7 @@ html, body {
   box-sizing: border-box; }
 
 html, body {
-  font-size: 21px; }
+  font-size: 18px; }
 
 body {
   background: #fff;
@@ -5223,3 +5223,23 @@ th.hide-for-touch {
     display: table-cell !important; }
   th.show-for-print {
     display: table-cell !important; } }
+
+.post {
+  padding-right: 5em; }
+
+.post img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 30px 1px #EEEEEE;
+          box-shadow: 0 0 30px 1px #EEEEEE; }
+
+.post-body {
+  margin-top: 4em; }
+
+.side {
+  padding-top: 10px; }
+
+.error {
+  color: red; }

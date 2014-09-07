@@ -8,12 +8,12 @@
 
     {{ HTML::style('css/normalize.css') }}
     {{ HTML::style('css/foundation.css') }}
-    {{ HTML::style('css/words.css') }}
+    <!-- {{ HTML::style('css/words.css') }} -->
 </head>
 <body>
 
     <div class="container">
-        <div class="row">
+        <!-- <div class="row"> -->
             @if(Auth::check())
                 @include('layouts.partials._adminbar')
             @endif
@@ -23,7 +23,7 @@
             @include('layouts.partials._navigation')
 
             @yield('content')
-        </div>
+        <!-- </div> -->
     </div>
 
 </body>

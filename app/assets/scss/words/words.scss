@@ -1,9 +1,11 @@
+@import "foundation/components/global";
+
 .row {
     // box-shadow: 0 0 30px 1px #f0f0f0;
 }
 
 .post {
-    // box-shadow: 0 0 30px 1px #f0f0f0;
+    // box-shadow: 0 0 30px 1px $gainsboro;
     // padding: 0 100px 0 0;
     padding-right: 5em;
 }
@@ -12,7 +14,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 70%;
+    // max-width: 70%;
+    padding: 20px;
+    box-shadow: 0 0 30px 1px $smoke;
 }
 
 .post-body {
