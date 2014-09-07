@@ -1260,7 +1260,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Crimson", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -5300,3 +5300,6 @@ footer {
 .panel p {
   margin: 0;
   padding: 0; }
+
+.form {
+  font-family: "Open Sans", sans-serif; }
