@@ -4,6 +4,7 @@ This is an implementation of a blog in a more traditonal manner, which is to say
 
 TODO for v1:
 - Deploy to production!
+  - Apparently this is a lot harder than I thought, if you want it to go in a subdirectory. Ugh. 
 
 Future versions:
 - Refactoring
