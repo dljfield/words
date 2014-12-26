@@ -2,20 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>/words</title>
+    <title>words</title>
+
+    <!-- body text -->
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Crimson:400,400i,700">
+
+    <!-- other text -->
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Sans+Pro:300,300i">
+
+    <!-- monospace -->
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Inconsolata:500">
+
+    {{ HTML::style('css/lib/normalize.css') }}
+    {{ HTML::style('css/lib/skeleton.css') }}
+
+    {{ HTML::style('css/words.css') }}
+
 </head>
 <body>
 
     <div class="container">
-            @if(Auth::check())
-                @include('layouts.partials._adminbar')
-            @endif
+        @if(Auth::check())
+            @include('layouts.partials._adminbar')
+        @endif
 
-            <h1>/words</h1>
+        @include('layouts.partials._header')
 
-            @include('layouts.partials._navigation')
 
-            @yield('content')
+        @yield('content')
     </div>
 
     @include('layouts.partials._footer')
