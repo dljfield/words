@@ -2,7 +2,7 @@
 ------------------------- */
 
 .header	{
-	margin: 50px;
+	margin: 5rem;
 }
 
 .page-title {
@@ -28,12 +28,17 @@
 /* POST
 ------------------------ */
 
+.post {
+	text-align: justify;
+}
+
 .post p {
-	font-size: 2.1rem;
+	font-size: 1.8rem;
+	line-height: 3.4rem;
 }
 
 .post p code {
-	font-size: 70%;
+	font-size: 80%;
 }
 
 .post .return-link {
@@ -48,6 +53,7 @@
 
 .post-title {
 	margin-bottom: 8rem;
+	text-align: center;
 }
 
 .post-title h2 {
@@ -58,4 +64,13 @@
 .post-title .info {
 	font-family: "Source Sans Pro";
 	color: #8A8A8A;
+}
+
+/* FOOTER
+------------------------ */
+
+footer {
+	font-family: "Source Sans Pro";
+	text-align: center;
+	margin: 4rem;
 }

@@ -5,7 +5,7 @@
     <title>words</title>
 
     <!-- body text -->
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Crimson:400,400i,700">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Libre+Caslon+Text:400,400i,700">
 
     <!-- other text -->
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Sans+Pro:300,300i">
