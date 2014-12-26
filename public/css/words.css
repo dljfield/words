@@ -25,6 +25,10 @@
 	text-decoration: none;
 }
 
+.page-subtitle {
+	text-align: center;
+}
+
 /* POST
 ------------------------ */
 
@@ -92,4 +96,34 @@ footer {
 
 .admin-bar a {
 	text-decoration: none;
+}
+
+/* POST LIST
+------------------------ */
+
+.post-summary {
+	padding: 5rem 0;
+	text-align: center;
+}
+
+.post-summary a {
+	text-decoration: none;
+}
+
+.post-summary h3 {
+	margin: 0;
+	padding: ;
+}
+
+.post-summary .post-title {
+	margin-bottom: 2rem;
+}
+
+.post-summary .info {
+	font-family: "Source Sans Pro";
+	color: #8A8A8A;
+}
+
+.post-list > :not(:last-child) {
+	border-bottom: 1px solid #e1e1e1;
 }
