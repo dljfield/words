@@ -17,6 +17,6 @@
 <div>
     <label>
         Publish
-        {{ Form::checkbox('published', true) }}
+        {{ Form::checkbox('published', true, isset($post->published) && $post->published == true ? true : false) }}
     </label>
 </div>
