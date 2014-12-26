@@ -1,19 +1,155 @@
+/* HEADER
+------------------------- */
+
+.header	{
+	margin: 5rem;
+}
+
+.page-title {
+	text-align: center;
+	margin: 0;
+}
+
+.main-nav {
+	font-family: "Source Sans Pro", sans;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.main-nav li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.main-nav a {
+	text-decoration: none;
+}
+
+.page-subtitle {
+	text-align: center;
+}
+
+/* POST
+------------------------ */
+
 .post {
-  padding-right: 5em; }
+	text-align: justify;
+}
 
-.post img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70%;
-  padding: 20px;
-  border: 1px dotted black; }
+.post p {
+	font-size: 1.8rem;
+	line-height: 3.4rem;
+}
 
-.post-body {
-  margin-top: 4em; }
+.post p code {
+	font-size: 80%;
+}
 
-.side {
-  padding-top: 10px; }
+.post .return-link {
+	font-family: "Source Sans Pro", sans;
+	font-size: 80%;
+	text-transform: uppercase;
+}
 
-.error {
-  color: red; }
+.post .return-link a {
+	text-decoration: none;
+}
+
+.post-title {
+	margin-bottom: 8rem;
+	text-align: center;
+}
+
+.post-title h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.post-title .info {
+	font-family: "Source Sans Pro", sans;
+	color: #8A8A8A;
+}
+
+/* FOOTER
+------------------------ */
+
+footer {
+	font-family: "Source Sans Pro", sans;
+	text-align: center;
+	margin: 4rem;
+}
+
+/* ADMIN BAR
+------------------------ */
+.admin-bar {
+	font-family: "Source Sans Pro", sans;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	padding-top: 1rem;
+}
+
+.admin-bar li {
+	display: inline;
+	margin: 0 0.5rem;
+}
+
+.admin-bar a {
+	text-decoration: none;
+}
+
+/* POST LIST
+------------------------ */
+
+.post-summary {
+	padding: 5rem 0;
+	text-align: center;
+}
+
+.post-summary a {
+	text-decoration: none;
+}
+
+.post-summary h3 {
+	margin: 0;
+	padding: ;
+}
+
+.post-summary .post-title {
+	margin-bottom: 2rem;
+}
+
+.post-summary .info {
+	font-family: "Source Sans Pro", sans;
+	color: #8A8A8A;
+}
+
+.post-list > :not(:last-child) {
+	border-bottom: 1px solid #e1e1e1;
+}
+
+/* ADMIN
+------------------------ */
+
+.login-form {
+	font-family: "Source Sans Pro", sans;
+	text-align: center;
+}
+
+.login-form input:not([type=button]):not([type=reset]):not([type=submit]) {
+	width: 100%;
+}
+
+.post-form {
+	font-family: "Source Sans Pro", sans;
+	text-align: center;
+}
+
+.post-form input:not([type=button]):not([type=reset]):not([type=submit]), textarea {
+	width: 100%;
+	font-family: 'Inconsolata', monospace;
+}
+
+.post-form #body{
+	min-height: 50rem;
+}

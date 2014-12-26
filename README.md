@@ -8,6 +8,5 @@ It can be found at http://thedebonair.net/words
 Future versions:
 - Refactoring
   - Full test suite to suport this.
-- Refined styling
 - Posts in markdown
 - Live markdown editor

@@ -3,28 +3,31 @@
 @section('content')
 
     <div class="row">
+        <div class="ten columns offset-by-one column">
+            <article class="post">
+                <div class="post-title">
+                    <h2> {{ $post->title }} </h2>
 
-        <article class="post medium-8 columns">
-            <h2> {{$post->title}} </h2>
-            <div class="subheader">{{ $post->summary }}</div>
-            <div class="post-body">{{ $post->body }}</div>
-        </article>
+                    <div class="info">
+                        Posted <abbr title="{{ $post->created_at }}">{{{ $post->created_at->diffForHumans() }}}</abbr>
 
+                        @if(Auth::check())
+                            <span class="admin-edit-button">
+                                &ndash;
+                                <a href="{{ route('posts.edit', $post->id) }}">Edit</a>
+                            </span>
+                        @endif
+                    </div>
 
+                </div>
 
-        <section class="side medium-4 columns">
-            <h4>Post Info</h4>
-            <p>Posted: {{ $post->created_at }} </p>
-            @if (Auth::check())
-                <div>{{ link_to_route('posts.edit', 'Edit This Post', $post->id) }}</div>
-            @endif
-            <div>{{ link_to_route('posts.index', '&laquo; All Posts') }}</div>
-        </section>
+                <div>{{ $post->body }}</div>
 
-    </div>
-
-    <div class="row">
-        <div class="large-12 columns">{{ link_to_route('posts.index', '&laquo; All Posts') }}</div>
+                <p>
+                    <span class="return-link">{{ link_to_route('posts.index', '&laquo; All Posts') }}</span>
+                </p>
+            </article>
+        </div>
     </div>
 
 @stop
