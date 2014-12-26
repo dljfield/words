@@ -8,7 +8,16 @@
                 <div class="post-title">
                     <h2> {{ $post->title }} </h2>
 
-                    <span class="info">Posted <abbr title="{{ $post->created_at }}">{{{ $post->created_at->diffForHumans() }}}</abbr></span>
+                    <div class="info">
+                        Posted <abbr title="{{ $post->created_at }}">{{{ $post->created_at->diffForHumans() }}}</abbr>
+
+                        @if(Auth::check())
+                            <span class="admin-edit-button">
+                                &ndash;
+                                <a href="{{ route('posts.edit', $post->id) }}">Edit</a>
+                            </span>
+                        @endif
+                    </div>
 
                 </div>
 
