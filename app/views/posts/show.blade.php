@@ -9,7 +9,7 @@
                     <h2> {{ $post->title }} </h2>
 
                     <div class="info">
-                        Posted <abbr title="{{ $post->created_at }}">{{{ $post->created_at->diffForHumans() }}}</abbr>
+                        Posted <abbr title="{{ $post->published_at }}">{{{ $post->published_at->diffForHumans() }}}</abbr>
 
                         @if(Auth::check())
                             <span class="admin-edit-button">

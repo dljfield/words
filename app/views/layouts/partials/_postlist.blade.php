@@ -11,7 +11,7 @@
 				    		<h3> <a href="{{ route('posts.show', $post->id) }}">{{ $post->title }}</a> </h3>
 
 	                   		<div class="info">
-	                        	Posted <abbr title="{{ $post->created_at }}">{{{ $post->created_at->diffForHumans() }}}</abbr>
+	                        	Posted <abbr title="{{ $post->published_at }}">{{{ $post->published_at->diffForHumans() }}}</abbr>
 	                    	</div>
 
 			    		</div>
