@@ -28,7 +28,6 @@
 
         @include('layouts.partials._header')
 
-
         @yield('content')
     </div>
 
