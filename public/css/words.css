@@ -11,7 +11,7 @@
 }
 
 .main-nav {
-	font-family: "Source Sans Pro";
+	font-family: "Source Sans Pro", sans;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -46,7 +46,7 @@
 }
 
 .post .return-link {
-	font-family: "Source Sans Pro";
+	font-family: "Source Sans Pro", sans;
 	font-size: 80%;
 	text-transform: uppercase;
 }
@@ -66,7 +66,7 @@
 }
 
 .post-title .info {
-	font-family: "Source Sans Pro";
+	font-family: "Source Sans Pro", sans;
 	color: #8A8A8A;
 }
 
@@ -74,7 +74,7 @@
 ------------------------ */
 
 footer {
-	font-family: "Source Sans Pro";
+	font-family: "Source Sans Pro", sans;
 	text-align: center;
 	margin: 4rem;
 }
@@ -82,7 +82,7 @@ footer {
 /* ADMIN BAR
 ------------------------ */
 .admin-bar {
-	font-family: "Source Sans Pro";
+	font-family: "Source Sans Pro", sans;
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0;
@@ -120,10 +120,36 @@ footer {
 }
 
 .post-summary .info {
-	font-family: "Source Sans Pro";
+	font-family: "Source Sans Pro", sans;
 	color: #8A8A8A;
 }
 
 .post-list > :not(:last-child) {
 	border-bottom: 1px solid #e1e1e1;
+}
+
+/* ADMIN
+------------------------ */
+
+.login-form {
+	font-family: "Source Sans Pro", sans;
+	text-align: center;
+}
+
+.login-form input:not([type=button]):not([type=reset]):not([type=submit]) {
+	width: 100%;
+}
+
+.post-form {
+	font-family: "Source Sans Pro", sans;
+	text-align: center;
+}
+
+.post-form input:not([type=button]):not([type=reset]):not([type=submit]), textarea {
+	width: 100%;
+	font-family: 'Inconsolata', monospace;
+}
+
+.post-form #body{
+	min-height: 50rem;
 }

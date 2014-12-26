@@ -1,6 +1,8 @@
 @extends('layouts.default')
 
 @section('content')
-    <h2>Welcome to the jungle.</h2>
+	<div class="page-subtitle">
+    	<h2>Welcome to the jungle.</h2>
+	</div>
     @include('layouts.partials._postlist')
 @stop
