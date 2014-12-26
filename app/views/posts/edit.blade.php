@@ -5,7 +5,7 @@
 <div class="row">
     <div class="ten columns offset-by-one column">
         <div class="post-form">
-            {{ Form::open(['route' => 'posts.update', $post->id]) }}
+            {{ Form::open(['route' => ['posts.update', $post->id], 'method' => 'PUT']) }}
 
                 @include('posts.partials.form')
 
