@@ -47,7 +47,7 @@
 
 .post .return-link {
 	font-family: "Source Sans Pro", sans;
-	font-size: 80%;
+	font-size: 90%;
 	text-transform: uppercase;
 }
 
@@ -65,9 +65,8 @@
 	padding: 0;
 }
 
-.post-title .info {
-	font-family: "Source Sans Pro", sans;
-	color: #8A8A8A;
+code {
+	font-family: "Inconsolata", monospace;
 }
 
 /* FOOTER
@@ -119,9 +118,11 @@ footer {
 	margin-bottom: 2rem;
 }
 
-.post-summary .info {
+.info {
 	font-family: "Source Sans Pro", sans;
+	font-size: 90%;
 	color: #8A8A8A;
+	text-transform: uppercase;
 }
 
 .post-list > :not(:last-child) {
