@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>words</title>
+    <title>words @if(isset($pageTitle)) &ndash; {{{ $pageTitle }}} @endif</title>
 
     <!-- body text -->
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Libre+Caslon+Text:400,400i,700">

@@ -22,7 +22,9 @@ class PostsController extends \BaseController {
 
         if ( ! $post || $post->published == false && Auth::guest()) App::abort(404);
 
-        return View::make('posts.show')->withPost($post);
+        $pageTitle = $post->title;
+
+        return View::make('posts.show', compact('post', 'pageTitle'));
     }
 
     public function create()
